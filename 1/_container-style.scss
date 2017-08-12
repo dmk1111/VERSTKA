@@ -1,0 +1,105 @@
+$search-height: 40px;
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.main {
+  border: 1px solid black;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+
+  .search-bar {
+    height: $search-height;
+    border-bottom: 1px solid black;
+    margin-bottom: 2px;
+    .search-box {
+      margin-left: 40px;
+      display: inline-block;
+      width: 500px;
+      height: $search-height;
+      vertical-align: middle;
+      white-space: nowrap;
+      position: absolute;
+      top: 11px;
+      & label {
+        display: inline-block;
+        height: 30px;
+        margin-top: 10px;
+        margin-right: 20px;
+      }
+    }
+    input#search-box {
+      display: inline-block;
+      border: 1px solid black;
+      font-size: 10pt;
+      margin: 0 auto;
+      height: 40px;
+      width: 300px;
+      position: absolute;
+      top: 0;
+    }
+    .search-icon, .arrow-back, .arrow-forward, .add-button {
+      display: inline-block;
+      height: 38px;
+      width: 38px;
+      cursor: pointer;
+    }
+    .buttons {
+      float: right;
+    }
+    .arrow-back {
+      background-image: url("../img/arrow-back.png");
+    }
+    .arrow-forward {
+      background-image: url("../img/arrow-forward.png");
+    }
+    .search-icon {
+      background-image: url("../img/search.png");
+    }
+    .add {
+      width: 100px;
+      float: right;
+      height: $search-height;
+      &-text {
+        position: absolute;
+        top: 20px;
+      }
+      &-button {
+        background-image: url("../img/add.png");
+        float: right;
+      }
+    }
+  }
+
+  .sidebar {
+    display: inline-block;
+    border: 1px solid black;
+    float: left;
+    .menu-item {
+      text-align: center;
+      width: 150px;
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid black;
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+      }
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.container {
+  width: calc(100% - 155px);
+  display: inline-block;
+}
