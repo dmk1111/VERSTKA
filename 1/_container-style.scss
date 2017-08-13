@@ -6,6 +6,7 @@ body {
   padding: 10px;
   * {
     box-sizing: border-box;
+    font-family: "Times New Roman";
   }
 }
 
@@ -37,12 +38,15 @@ body {
     input#search-box {
       display: inline-block;
       border: 1px solid black;
-      font-size: 10pt;
+      font-size: 12pt;
       margin: 0 auto;
       height: 40px;
       width: 300px;
       position: absolute;
       top: 0;
+      &::placeholder {
+        font-style: italic;
+      }
     }
     .search-icon, .arrow-back, .arrow-forward, .add-button {
       display: inline-block;
@@ -102,4 +106,57 @@ body {
 .container {
   width: calc(100% - 155px);
   display: inline-block;
+}
+
+//similiar style for all inputs
+[type="text"], [type="number"] {
+  padding-left: 8px;
+  border: 1px solid black;
+  font-size: 12pt;
+  height: 30px;
+  width: 100%;
+}
+
+[type="number"], [type="date"] {
+  text-align: center;
+  font-style: italic;
+}
+// date picker styling
+[type="date"] {
+  font-size: 12pt;
+  min-width: 120px;
+  width: 120px;
+  display: inline-block;
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  height: 30px;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+//dropdown styling
+.dropdown-select {
+  display: inline-block;
+  background: url('../img/dropdown-arrow.jpg') no-repeat right center;
+  height: 30px;
+  overflow: hidden;
+  width: calc(100% - 5px);
+  min-width: 240px;
+  border: 1px solid black;
+  * {
+    font-style: italic;
+    text-align: center;
+  }
+  select {
+    background: transparent;
+    padding: 5px; /* If you add too much padding here, the options won't show in IE */
+    border: 1px solid #ccc;
+    font-size: 16px;
+    height: 30px;
+    width: calc(100% + 15px);
+    min-width: 260px;
+  }
 }
