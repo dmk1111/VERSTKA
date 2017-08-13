@@ -71,7 +71,7 @@
       font-weight: 700;
       line-height: 30px;
     }
-    .row {
+    .single-row {
       display: flex;
       align-items: center;
       align-content: space-around;
@@ -168,6 +168,7 @@
 
 //Contact information
 .right-side {
+  padding: 2px;
   max-width: 250px;
   min-width: 150px;
   flex-grow: 0;
