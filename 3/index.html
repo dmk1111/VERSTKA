@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3rd page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="main">
+    <div class="search-bar">
+        <div class="search-box">
+            <label for="search-box">Пошук</label>
+            <input type="search" placeholder="Прізвище ім'я по батькові" id="search-box" results=5>
+            <span class="buttons">
+                <span class="search-icon"></span>
+                <span class="arrow-back"></span>
+                <span class="arrow-forward"></span>
+            </span>
+        </div>
+
+        <span class="add"><span class="add-text">Додати</span><span class="add-button"></span></span>
+    </div>
+    <div class="sidebar">
+        <div class="menu-item"><span>Загальна інформація</span></div>
+        <div class="menu-item"><span>Звання, ранг, розряд (категорія)</span></div>
+        <div class="menu-item"><span>Службова (трудова) діяльність</span></div>
+        <div class="menu-item"><span>Освіта</span></div>
+        <div class="menu-item"><span>Контракт, атестація, кадровий резерв</span></div>
+        <div class="menu-item"><span>Заоходження, стягнення</span></div>
+        <div class="menu-item"><span>Місце проживання, сімейний стан</span></div>
+        <div class="menu-item"><span>Пільги, перевірки, декларації</span></div>
+        <div class="menu-item"><span>Відпустки, лікування</span></div>
+        <div class="menu-item"><span>Звільнення, вислуга (стаж)</span></div>
+        <div class="menu-item"><span>Військовий облік</span></div>
+        <div class="menu-item"><span>Інше</span></div>
+    </div>
+    <div class="container">
+
+        <div class="third-page">
+            <div class="row">
+                <span class="user-name">МИХАЛЬЧУК Петро Степанович</span>
+                <span class="centered"><span class="add-text centered">Додати</span><span class="add-button"></span></span>
+            </div>
+
+            <div class="outer-container">
+                <div class="inner-container">
+                    <div class="table-header">
+                        <table id="headertable">
+                            <thead>
+                            <tr>
+                                <th class="header-cell col1-2" colspan="2">Дата</th>
+                                <th class="header-cell col2" rowspan="2">Посада</th>
+                                <th class="header-cell col3" rowspan="2">Структурний підрозділ, орган (установа, організація)</th>
+                                <th class="header-cell col4" rowspan="2">Підстава</th>
+                                <th class="header-cell col5" rowspan="2">Категорія, ранг, код за КП</th>
+                                <th class="header-cell col6" rowspan="2">Процедура зайняття посади</th>
+                                <th class="header-cell col7" rowspan="2">Стаж<br><br>&nbsp;К &nbsp;&nbsp; С ДС ПС</th>
+                            </tr>
+                            <tr>
+                                <th class="header-cell col1">З якого часу</th>
+                                <th class="header-cell col1">до якого часу</th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="table-body">
+                        <table id="bodytable">
+                            <tbody>
+                            <tr>
+                                <td class="body-cell col1">01.09.2002</td>
+                                <td class="body-cell col1">15.05.2007</td>
+                                <td class="body-cell col2">студент</td>
+                                <td class="body-cell col3">Київський політехнічний інститут</td>
+                                <td class="body-cell col4">наказ КПІ від 03.08.2002 No 77</td>
+                                <td class="body-cell col5"></td>
+                                <td class="body-cell col6"></td>
+                                <td class="body-cell col7"><span>0,5</span>&nbsp;&nbsp;
+                                    <input type="checkbox" value="S">
+                                    <input type="checkbox" value="DS">
+                                    <input type="checkbox" value="PS">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="body-cell col1">15.10.2007</td>
+                                <td class="body-cell col1">29.05.2011</td>
+                                <td class="body-cell col2">головний фахівець</td>
+                                <td class="body-cell col3">відділ роботи з персоналом Управління МНС України в Волинській області</td>
+                                <td class="body-cell col4">наказ УМНС в Волинській області від 15.10.2007 No 123</td>
+                                <td class="body-cell col5"></td>
+                                <td class="body-cell col6"></td>
+                                <td class="body-cell col7"><span>1</span>&nbsp;&nbsp;
+                                    <input type="checkbox" value="S" checked>
+                                    <input type="checkbox" value="DS">
+                                    <input type="checkbox" value="PS">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="body-cell col1">29.05.2011</td>
+                                <td class="body-cell col1">30.09.2015</td>
+                                <td class="body-cell col2">старший викладач</td>
+                                <td class="body-cell col3">кафедра пожежної безпеки Національного університету цивільного захисту України</td>
+                                <td class="body-cell col4">наказ НУЦЗУ від 29.05.2011 No 123</td>
+                                <td class="body-cell col5"></td>
+                                <td class="body-cell col6"></td>
+                                <td class="body-cell col7"><span>1</span>&nbsp;&nbsp;
+                                    <input type="checkbox" value="S" checked>
+                                    <input type="checkbox" value="DS">
+                                    <input type="checkbox" value="PS" checked>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="body-cell col1">30.09.2015</td>
+                                <td class="body-cell col1">15.07.2016</td>
+                                <td class="body-cell col2">головний спеціаліст</td>
+                                <td class="body-cell col3">відділ персоналу Управління ДСНС України у Волинській області</td>
+                                <td class="body-cell col4">наказ УДСНС в Волинській області від 30.09.2015 No 333</td>
+                                <td class="body-cell col5">В, 9</td>
+                                <td class="body-cell col6">конкурс</td>
+                                <td class="body-cell col7"><span>1</span>&nbsp;&nbsp;
+                                    <input type="checkbox" value="S">
+                                    <input type="checkbox" value="DS" checked>
+                                    <input type="checkbox" value="PS">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="body-cell col1">15.07.2016</td>
+                                <td class="body-cell col1"></td>
+                                <td class="body-cell col2">інспектор з кадрів</td>
+                                <td class="body-cell col3">відділ кадрів 15 автотранспортного підприємства (м. Київ)</td>
+                                <td class="body-cell col4">наказ 15 АТП від 15.07.2016 No 98</td>
+                                <td class="body-cell col5">3423</td>
+                                <td class="body-cell col6"></td>
+                                <td class="body-cell col7"><span>1</span>&nbsp;&nbsp;
+                                    <input type="checkbox" value="S">
+                                    <input type="checkbox" value="DS">
+                                    <input type="checkbox" value="PS">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="body-cell col1"></td>
+                                <td class="body-cell col1"></td>
+                                <td class="body-cell col2"></td>
+                                <td class="body-cell col3"></td>
+                                <td class="body-cell col4"></td>
+                                <td class="body-cell col5"></td>
+                                <td class="body-cell col6"></td>
+                                <td class="body-cell col7"><span></span>&nbsp;&nbsp;
+                                    <input type="checkbox" value="S">
+                                    <input type="checkbox" value="DS">
+                                    <input type="checkbox" value="PS">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="body-cell col1"></td>
+                                <td class="body-cell col1"></td>
+                                <td class="body-cell col2"></td>
+                                <td class="body-cell col3"></td>
+                                <td class="body-cell col4"></td>
+                                <td class="body-cell col5"></td>
+                                <td class="body-cell col6"></td>
+                                <td class="body-cell col7"><span></span>&nbsp;&nbsp;
+                                    <input type="checkbox" value="S">
+                                    <input type="checkbox" value="DS">
+                                    <input type="checkbox" value="PS">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="body-cell col1"></td>
+                                <td class="body-cell col1"></td>
+                                <td class="body-cell col2"></td>
+                                <td class="body-cell col3"></td>
+                                <td class="body-cell col4"></td>
+                                <td class="body-cell col5"></td>
+                                <td class="body-cell col6"></td>
+                                <td class="body-cell col7"><span></span>&nbsp;&nbsp;
+                                    <input type="checkbox" value="S">
+                                    <input type="checkbox" value="DS">
+                                    <input type="checkbox" value="PS">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="body-cell col1"></td>
+                                <td class="body-cell col1"></td>
+                                <td class="body-cell col2"></td>
+                                <td class="body-cell col3"></td>
+                                <td class="body-cell col4"></td>
+                                <td class="body-cell col5"></td>
+                                <td class="body-cell col6"></td>
+                                <td class="body-cell col7"><span></span>&nbsp;&nbsp;
+                                    <input type="checkbox" value="S">
+                                    <input type="checkbox" value="DS">
+                                    <input type="checkbox" value="PS">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="body-cell col1"></td>
+                                <td class="body-cell col1"></td>
+                                <td class="body-cell col2"></td>
+                                <td class="body-cell col3"></td>
+                                <td class="body-cell col4"></td>
+                                <td class="body-cell col5"></td>
+                                <td class="body-cell col6"></td>
+                                <td class="body-cell col7"><span></span>&nbsp;&nbsp;
+                                    <input type="checkbox" value="S">
+                                    <input type="checkbox" value="DS">
+                                    <input type="checkbox" value="PS">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-container">
+                <div class="button">Послужний список</div>
+                <div class="button">Особова <br> картка ДС</div>
+                <div class="button">Форма <br> №П-2</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

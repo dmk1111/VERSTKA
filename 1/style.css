@@ -64,14 +64,15 @@ body {
         float: right; }
   .main .sidebar {
     display: inline-block;
-    border: 1px solid black;
+    border: 2px solid black;
     float: left; }
     .main .sidebar .menu-item {
+      font-weight: 700;
       text-align: center;
       width: 150px;
       height: 50px;
       line-height: 50px;
-      border-bottom: 1px solid black; }
+      border-bottom: 2px solid black; }
       .main .sidebar .menu-item span {
         display: inline-block;
         vertical-align: middle;
@@ -81,7 +82,8 @@ body {
 
 .container {
   width: calc(100% - 155px);
-  display: inline-block; }
+  display: inline-block;
+  min-height: 650px; }
 
 [type="text"], [type="number"] {
   padding-left: 8px;
@@ -156,6 +158,8 @@ body {
         margin-top: 0;
         margin-bottom: 2px;
         font-weight: 700; }
+  .content .work-info table, .content .work-info th, .content .work-info td {
+    border-collapse: collapse; }
   .content .work-info table {
     width: 100%; }
     .content .work-info table tr {

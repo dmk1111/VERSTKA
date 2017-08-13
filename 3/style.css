@@ -24,6 +24,7 @@ body {
       position: absolute;
       top: 11px; }
       .main .search-bar .search-box label {
+        font-weight: 700;
         display: inline-block;
         height: 30px;
         margin-top: 10px;
@@ -131,65 +132,120 @@ body {
     width: calc(100% + 15px);
     min-width: 260px; }
 
-.second-page {
+.third-page {
   margin: 10px;
   display: flex;
   flex-direction: column;
   flex-basis: auto; }
-  .second-page .user-name {
+  .third-page .user-name {
     font-style: italic;
-    font-size: 16pt; }
-  .second-page .row {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-top: 5px; }
-    .second-page .row > span {
-      font-weight: 700; }
-  .second-page .centered {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center; }
-  .second-page .add-text {
+    font-size: 16pt;
+    font-weight: 400; }
+
+.row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 5px; }
+  .row > span {
+    font-weight: 700; }
+  .row .add-text {
     margin-right: 2px; }
-  .second-page .add-button {
+  .row .add-button {
     display: inline-block;
     background-image: url("../img/add.png");
     background-size: 100%;
     height: 24px;
     width: 24px; }
-  .second-page .small-table {
-    width: 85%; }
-  .second-page .table {
-    height: 102px;
-    overflow: scroll; }
-  .second-page table {
-    width: 100%; }
-  .second-page table, .second-page th, .second-page td {
-    border: 2px solid black;
-    border-collapse: collapse; }
-  .second-page td {
-    height: 25px;
-    font-style: italic;
-    padding-left: 5px; }
-    .second-page td.number {
-      text-align: center; }
-  .second-page th {
-    height: 50px; }
-  .second-page .info {
-    color: green;
-    font-weight: 700; }
-  .second-page .red {
-    color: red; }
+
+.centered {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; }
+
+.table {
+  height: 500px;
+  overflow: scroll; }
+
+table {
+  width: 100%; }
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse; }
+
+td {
+  padding-top: 5px;
+  height: 50px;
+  font-style: italic;
+  padding-left: 5px;
+  vertical-align: baseline; }
+  td.number {
+    text-align: center; }
+
+th {
+  height: 80px;
+  text-align: center; }
+
+.outer-container {
+  position: absolute;
+  top: 100px;
+  left: 180px;
+  right: 20px;
+  height: 50%; }
+
+.inner-container {
+  height: 100%;
+  overflow: hidden; }
+
+.table-header {
+  height: 80px;
+  position: relative; }
+
+.table-body {
+  height: calc(100% - 80px);
+  overflow: auto; }
+
+.header-cell {
+  height: 40px; }
+
+.body-cell {
+  text-align: left; }
+
+.col1, .col2, .col4, .col5, .col6, .col7 {
+  width: 8vw;
+  max-width: 8vw;
+  min-width: 8vw; }
+
+.col3 {
+  min-width: 12vw;
+  width: 12vw;
+  max-width: 12vw; }
+
+.col1, .col5, .col6, .col7 {
+  text-align: center; }
+
+.col7 {
+  vertical-align: middle; }
+
+.col1-2 {
+  min-width: 16vw;
+  width: 16vw;
+  max-width: 16vw; }
+
+.buttons-container {
+  display: flex;
+  position: absolute;
+  bottom: 100px; }
 
 .button {
-  width: 100px;
+  width: 150px;
   flex-grow: 1;
   flex-shrink: 1;
-  padding: 5px;
+  padding: 5px 10px;
   margin: 5px;
   margin-left: 0;
-  height: 30px;
+  height: 50px;
   border: 1px solid black;
   text-align: center;
   font-weight: 700;
