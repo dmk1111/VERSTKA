@@ -24,6 +24,7 @@ body {
       position: absolute;
       top: 11px; }
       .main .search-bar .search-box label {
+        font-weight: 700;
         display: inline-block;
         height: 30px;
         margin-top: 10px;
@@ -80,7 +81,7 @@ body {
       .main .sidebar .menu-item:last-child {
         border: none; }
 
-.container {
+.main-container {
   width: calc(100% - 155px);
   display: inline-block;
   min-height: 650px; }
@@ -150,11 +151,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
-    .content .top .input-box, .content .top .terms .row .half-box, .content .terms .row .top .half-box {
+    .content .top .input-box, .content .top .terms .single-row .half-box, .content .terms .single-row .top .half-box {
       flex-grow: 1;
       flex-basis: 0;
       padding: 5px 3px; }
-      .content .top .input-box p, .content .top .terms .row .half-box p, .content .terms .row .top .half-box p {
+      .content .top .input-box p, .content .top .terms .single-row .half-box p, .content .terms .single-row .top .half-box p {
         margin-top: 0;
         margin-bottom: 2px;
         font-weight: 700; }
@@ -181,18 +182,18 @@ body {
   .content .terms span {
     font-weight: 700;
     line-height: 30px; }
-  .content .terms .row {
+  .content .terms .single-row {
     display: flex;
     align-items: center;
     align-content: space-around;
     margin-top: 5px; }
-    .content .terms .row * {
+    .content .terms .single-row * {
       margin-right: 10px;
       flex-shrink: 1; }
-    .content .terms .row .input-box, .content .terms .row .half-box {
+    .content .terms .single-row .input-box, .content .terms .single-row .half-box {
       margin: 0;
       width: 50%; }
-      .content .terms .row .input-box textarea, .content .terms .row .half-box textarea {
+      .content .terms .single-row .input-box textarea, .content .terms .single-row .half-box textarea {
         height: 60px;
         line-height: 30px;
         white-space: pre-wrap;
@@ -200,12 +201,12 @@ body {
         width: 90%;
         font-size: 12pt;
         padding: 5px; }
-      .content .terms .row .input-box .dropdown-select, .content .terms .row .half-box .dropdown-select, .content .terms .row .input-box select, .content .terms .row .half-box select {
+      .content .terms .single-row .input-box .dropdown-select, .content .terms .single-row .half-box .dropdown-select, .content .terms .single-row .input-box select, .content .terms .single-row .half-box select {
         height: 60px; }
-      .content .terms .row .input-box .dropdown-select, .content .terms .row .half-box .dropdown-select {
+      .content .terms .single-row .input-box .dropdown-select, .content .terms .single-row .half-box .dropdown-select {
         background-size: 10% 100%;
         width: 90%; }
-        .content .terms .row .input-box .dropdown-select select, .content .terms .row .half-box .dropdown-select select {
+        .content .terms .single-row .input-box .dropdown-select select, .content .terms .single-row .half-box .dropdown-select select {
           text-align: left;
           word-break: break-word;
           overflow-wrap: break-word;
@@ -219,19 +220,19 @@ body {
           white-space: -o-pre-wrap;
           /* Opera 7 */
           word-wrap: break-word; }
-    .content .terms .row p {
+    .content .terms .single-row p {
       font-weight: 700;
       margin: 2px 0; }
-    .content .terms .row .half-box:first-child {
+    .content .terms .single-row .half-box:first-child {
       width: 45%;
       margin-right: 5%; }
-      .content .terms .row .half-box:first-child [type="text"] {
+      .content .terms .single-row .half-box:first-child [type="text"] {
         float: right;
         width: 80px;
         text-align: center; }
-      .content .terms .row .half-box:first-child [type="date"] {
+      .content .terms .single-row .half-box:first-child [type="date"] {
         float: right; }
-    .content .terms .row .half-box .dropdown-select, .content .terms .row .half-box select {
+    .content .terms .single-row .half-box .dropdown-select, .content .terms .single-row .half-box select {
       height: 30px;
       background-size: auto; }
   .content .terms input {
@@ -258,6 +259,7 @@ body {
       background-color: #f2f2f2; }
 
 .right-side {
+  padding: 2px;
   max-width: 250px;
   min-width: 150px;
   flex-grow: 0;

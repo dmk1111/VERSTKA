@@ -24,6 +24,7 @@ body {
       position: absolute;
       top: 11px; }
       .main .search-bar .search-box label {
+        font-weight: 700;
         display: inline-block;
         height: 30px;
         margin-top: 10px;
@@ -80,7 +81,7 @@ body {
       .main .sidebar .menu-item:last-child {
         border: none; }
 
-.container {
+.main-container {
   width: calc(100% - 155px);
   display: inline-block;
   min-height: 650px; }
@@ -139,12 +140,12 @@ body {
   .second-page .user-name {
     font-style: italic;
     font-size: 16pt; }
-  .second-page .row {
+  .second-page .single-row {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     margin-top: 5px; }
-    .second-page .row > span {
+    .second-page .single-row > span {
       font-weight: 700; }
   .second-page .centered {
     display: inline-flex;
