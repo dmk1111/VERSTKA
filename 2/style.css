@@ -1,0 +1,196 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 10px; }
+  body * {
+    box-sizing: border-box;
+    font-family: "Times New Roman"; }
+
+.main {
+  border: 1px solid black;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px); }
+  .main .search-bar {
+    height: 40px;
+    border-bottom: 1px solid black;
+    margin-bottom: 2px; }
+    .main .search-bar .search-box {
+      margin-left: 40px;
+      display: inline-block;
+      width: 500px;
+      height: 40px;
+      vertical-align: middle;
+      white-space: nowrap;
+      position: absolute;
+      top: 11px; }
+      .main .search-bar .search-box label {
+        display: inline-block;
+        height: 30px;
+        margin-top: 10px;
+        margin-right: 20px; }
+    .main .search-bar input#search-box {
+      display: inline-block;
+      border: 1px solid black;
+      font-size: 12pt;
+      margin: 0 auto;
+      height: 40px;
+      width: 300px;
+      position: absolute;
+      top: 0; }
+      .main .search-bar input#search-box::placeholder {
+        font-style: italic; }
+    .main .search-bar .search-icon, .main .search-bar .arrow-back, .main .search-bar .arrow-forward, .main .search-bar .add-button {
+      display: inline-block;
+      height: 38px;
+      width: 38px;
+      cursor: pointer; }
+    .main .search-bar .buttons {
+      float: right; }
+    .main .search-bar .arrow-back {
+      background-image: url("../img/arrow-back.png"); }
+    .main .search-bar .arrow-forward {
+      background-image: url("../img/arrow-forward.png"); }
+    .main .search-bar .search-icon {
+      background-image: url("../img/search.png"); }
+    .main .search-bar .add {
+      width: 100px;
+      float: right;
+      height: 40px; }
+      .main .search-bar .add-text {
+        position: absolute;
+        top: 20px; }
+      .main .search-bar .add-button {
+        background-image: url("../img/add.png");
+        float: right; }
+  .main .sidebar {
+    display: inline-block;
+    border: 1px solid black;
+    float: left; }
+    .main .sidebar .menu-item {
+      text-align: center;
+      width: 150px;
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid black; }
+      .main .sidebar .menu-item span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal; }
+      .main .sidebar .menu-item:last-child {
+        border: none; }
+
+.container {
+  width: calc(100% - 155px);
+  display: inline-block;
+  min-height: 650px; }
+
+[type="text"], [type="number"] {
+  padding-left: 8px;
+  border: 1px solid black;
+  font-size: 12pt;
+  height: 30px;
+  width: 100%; }
+
+[type="number"], [type="date"] {
+  text-align: center;
+  font-style: italic; }
+
+[type="date"] {
+  font-size: 12pt;
+  min-width: 120px;
+  width: 120px;
+  display: inline-block;
+  background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+  height: 30px; }
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none; }
+
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0; }
+
+.dropdown-select {
+  display: inline-block;
+  background: url("../img/dropdown-arrow.jpg") no-repeat right center;
+  height: 30px;
+  overflow: hidden;
+  width: calc(100% - 5px);
+  min-width: 240px;
+  border: 1px solid black; }
+  .dropdown-select * {
+    font-style: italic;
+    text-align: center; }
+  .dropdown-select select {
+    background: transparent;
+    padding: 5px;
+    /* If you add too much padding here, the options won't show in IE */
+    border: 1px solid #ccc;
+    font-size: 16px;
+    height: 30px;
+    width: calc(100% + 15px);
+    min-width: 260px; }
+
+.second-page {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto; }
+  .second-page .user-name {
+    font-style: italic;
+    font-size: 16pt; }
+  .second-page .row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 5px; }
+    .second-page .row > span {
+      font-weight: 700; }
+  .second-page .centered {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; }
+  .second-page .add-text {
+    margin-right: 2px; }
+  .second-page .add-button {
+    display: inline-block;
+    background-image: url("../img/add.png");
+    background-size: 100%;
+    height: 24px;
+    width: 24px; }
+  .second-page .small-table {
+    width: 85%; }
+  .second-page table {
+    width: 100%;
+    height: 100px;
+    overflow: scroll; }
+  .second-page table, .second-page th, .second-page td {
+    border: 1px solid black;
+    border-collapse: collapse; }
+  .second-page td {
+    height: 25px;
+    font-style: italic;
+    padding-left: 5px; }
+    .second-page td.number {
+      text-align: center; }
+  .second-page th {
+    height: 50px; }
+  .second-page .info {
+    color: green;
+    font-weight: 700; }
+  .second-page .red {
+    color: red; }
+
+.button {
+  width: 100px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 5px;
+  margin: 5px;
+  margin-left: 0;
+  height: 30px;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: 700;
+  background-color: #f2f2f2; }
+
+/*# sourceMappingURL=style.css.map */

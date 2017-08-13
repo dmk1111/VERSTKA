@@ -106,6 +106,7 @@ body {
 .container {
   width: calc(100% - 155px);
   display: inline-block;
+  min-height: 650px;
 }
 
 //similiar style for all inputs
