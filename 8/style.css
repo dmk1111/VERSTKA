@@ -132,62 +132,118 @@ body {
     width: calc(100% + 15px);
     min-width: 260px; }
 
-.seventh-page {
+.eighth-page {
   margin: 10px;
   display: flex;
   flex-direction: column;
   flex-basis: auto; }
-  .seventh-page .user-name {
+  .eighth-page .user-name {
     font-style: italic;
     font-size: 16pt;
     font-weight: 400; }
-  .seventh-page .table {
+  .eighth-page .table {
     height: 500px;
     overflow: scroll; }
-  .seventh-page table {
+  .eighth-page table {
     width: 100%; }
-  .seventh-page table, .seventh-page th, .seventh-page td {
+  .eighth-page table, .eighth-page th, .eighth-page td {
     border: 1px solid black;
     border-collapse: collapse; }
-  .seventh-page th, .seventh-page td {
+  .eighth-page th, .eighth-page td {
     padding: 5px; }
-  .seventh-page td {
+  .eighth-page td {
     height: 30px;
     font-style: italic;
-    padding: 0 5px;
+    padding: 0 !important;
     vertical-align: inherit;
-    text-align: left; }
-    .seventh-page td .dropdown-select {
+    text-align: center; }
+    .eighth-page td.left-aligned {
+      text-align: left; }
+    .eighth-page td .dropdown-select {
       height: 28px; }
-  .seventh-page th {
+  .eighth-page th {
     height: 40px;
     text-align: center; }
-  .seventh-page .table-1 {
+  .eighth-page .table-1 {
     height: 140px; }
-    .seventh-page .table-1 th.wide-cell {
-      width: 45%; }
-    .seventh-page .table-1 td {
-      text-align: center; }
-      .seventh-page .table-1 td.note-cell {
-        text-align: left; }
-  .seventh-page .table-2 {
-    height: 142px; }
-    .seventh-page .table-2 th.dropdown-cell, .seventh-page .table-2 td.dropdown-cell {
-      width: 30%; }
-    .seventh-page .table-2 th.date-cell, .seventh-page .table-2 td.date-cell {
-      width: 15%;
-      text-align: center; }
-  .seventh-page .info-wrapper {
-    width: 15%;
-    margin-right: 45%; }
-    .seventh-page .info-wrapper > div {
-      display: inline-block; }
-  .seventh-page .info {
-    margin-left: 10%;
-    color: green;
+    .eighth-page .table-1 th {
+      width: 50%; }
+      .eighth-page .table-1 th.date-cell {
+        width: 10%; }
+  .eighth-page .table-2 {
+    height: 145px; }
+    .eighth-page .table-2 th {
+      width: 10%; }
+      .eighth-page .table-2 th.wide-cell {
+        width: 50%; }
+        .eighth-page .table-2 th.wide-cell .dropdown-select {
+          width: calc(100% - 5px); }
+    .eighth-page .table-2 td .dropdown-select {
+      min-width: 180px;
+      width: 180px; }
+    .eighth-page .table-2 td.wide-cell {
+      width: 50%; }
+      .eighth-page .table-2 td.wide-cell .dropdown-select {
+        width: calc(100% - 5px); }
+  .eighth-page .top-container, .eighth-page .middle-container, .eighth-page .bottom-container {
+    border: 1px solid black;
+    margin-bottom: 10px; }
+  .eighth-page .top-container {
+    padding: 10px;
     font-weight: 700; }
-  .seventh-page .red {
-    color: red; }
+    .eighth-page .top-container p {
+      margin: 0; }
+    .eighth-page .top-container .flex-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: space-between; }
+      .eighth-page .top-container .flex-wrapper .inner-flex {
+        width: 25%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 5px; }
+        .eighth-page .top-container .flex-wrapper .inner-flex span {
+          line-height: 30px; }
+        .eighth-page .top-container .flex-wrapper .inner-flex .dropdown-select {
+          min-width: 50%;
+          width: auto;
+          max-width: 60%;
+          float: right;
+          text-align: center; }
+        .eighth-page .top-container .flex-wrapper .inner-flex:last-child {
+          width: 50%; }
+        .eighth-page .top-container .flex-wrapper .inner-flex:first-child p {
+          text-align: center; }
+  .eighth-page .middle-container {
+    display: flex;
+    flex-direction: row;
+    height: 195px;
+    padding: 10px; }
+    .eighth-page .middle-container .table {
+      width: 60%; }
+    .eighth-page .middle-container .pdf-files {
+      padding-top: 25px;
+      padding-left: 15px; }
+      .eighth-page .middle-container .pdf-files table, .eighth-page .middle-container .pdf-files td, .eighth-page .middle-container .pdf-files th {
+        border: none;
+        text-align: left;
+        font-style: normal;
+        font-weight: 700;
+        padding: 5px !important;
+        vertical-align: top; }
+  .eighth-page .bottom-container {
+    padding: 10px;
+    width: 80%; }
+  .eighth-page input {
+    font-style: italic; }
+
+.pdf-file {
+  background-image: url("../img/pdf-icon.png");
+  width: 56px;
+  height: 56px;
+  display: inline-block; }
 
 .single-row {
   display: flex;
@@ -205,40 +261,6 @@ body {
     height: 24px;
     width: 24px; }
 
-.document-info {
-  display: flex;
-  flex-direction: column;
-  font-weight: 700; }
-  .document-info > p {
-    margin-bottom: 2px; }
-  .document-info > div {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-    .document-info > div [type="text"], .document-info > div [type="number"], .document-info > div [type="date"] {
-      margin: 0 10px;
-      font-style: italic; }
-      .document-info > div [type="text"].small, .document-info > div [type="number"].small, .document-info > div [type="date"].small {
-        width: 60px; }
-      .document-info > div [type="text"].medium, .document-info > div [type="number"].medium, .document-info > div [type="date"].medium {
-        width: 120px; }
-
-.different-places {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 10px; }
-  .different-places > div {
-    width: 30%; }
-    .different-places > div p {
-      font-weight: 700;
-      margin-bottom: 2px; }
-    .different-places > div textarea {
-      border: 1px solid black;
-      width: 100%;
-      font-style: italic;
-      font-size: 12pt; }
-
 .centered {
   display: inline-flex;
   justify-content: center;
@@ -246,8 +268,7 @@ body {
 
 .table-container {
   overflow: scroll;
-  position: relative;
-  margin-bottom: 5px; }
+  position: relative; }
 
 .button {
   width: 150px;
