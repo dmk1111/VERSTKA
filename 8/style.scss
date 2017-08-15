@@ -1,6 +1,6 @@
 @import "container-style";
 
-.seventh-page{
+.eighth-page{
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -30,9 +30,12 @@
   td {
     height: 30px;
     font-style: italic;
-    padding: 0 5px;
+    padding: 0 !important;
     vertical-align: inherit;
-    text-align: left;
+    text-align: center;
+    &.left-aligned {
+      text-align: left;
+    }
     .dropdown-select {
       height: 28px;
     }
@@ -44,45 +47,117 @@
   .table-1 {
     height: 140px;
     & th {
+      width: 50%;
+      &.date-cell {
+        width: 10%;
+      }
+    }
+  }
+  .table-2 {
+    height: 145px;
+    & th {
+      width: 10%;
       &.wide-cell {
-        width: 45%;
+        width: 50%;
+        .dropdown-select {
+          width: calc(100% - 5px);
+        }
       }
     }
     & td {
-      text-align: center;
-      &.note-cell {
-        text-align: left;
+      .dropdown-select {
+        min-width: 180px;
+        width: 180px;
+      }
+
+      &.wide-cell {
+        width: 50%;
+        .dropdown-select {
+          width: calc(100% - 5px);
+        }
       }
     }
   }
 
-  .table-2 {
-    height: 142px;
-    & th, & td {
-      &.dropdown-cell {
-        width: 30%;
-      }
-      &.date-cell {
-        width: 15%;
-        text-align: center;
-      }
-    }
+  .top-container, .middle-container, .bottom-container {
+    border: 1px solid black;
+    margin-bottom: 10px;
   }
-  .info-wrapper {
-    width: 15%;
-    margin-right: 45%;
-    &>div {
-      display: inline-block;
-    }
-  }
-  .info {
-    margin-left: 10%;
-    color: green;
+
+  .top-container {
+    padding: 10px;
     font-weight: 700;
+    p {
+      margin: 0;
+    }
+    .flex-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: space-between;
+      .inner-flex {
+        width: 25%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        span {
+          line-height: 30px;
+        }
+        .dropdown-select {
+          min-width: 50%;
+          width: auto;
+          max-width: 60%;
+          float: right;
+          text-align: center;
+        }
+        &:last-child {
+          width: 50%;
+        }
+        &:first-child {
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
   }
-  .red {
-    color: red;
+
+  .middle-container {
+    display: flex;
+    flex-direction: row;
+    height: 195px;
+    padding: 10px;
+    .table {
+      width: 60%;
+    }
+    .pdf-files {
+      padding-top: 25px;
+      padding-left: 15px;
+      table, td, th {
+        border: none;
+        text-align: left;
+        font-style: normal;
+        font-weight: 700;
+        padding: 5px !important;
+        vertical-align: top;
+      }
+    }
   }
+  .bottom-container {
+    padding: 10px;
+    width: 80%;
+  }
+  input {
+    font-style: italic;
+  }
+}
+
+.pdf-file {
+  background-image: url("../img/pdf-icon.png");
+  width: 56px;
+  height: 56px;
+  display: inline-block;
 }
 
 .single-row {
@@ -105,50 +180,6 @@
   }
 }
 
-.document-info {
-  display: flex;
-  flex-direction: column;
-  font-weight: 700;
-  &>p {
-    margin-bottom: 2px;
-  }
-  &>div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    [type="text"], [type="number"], [type="date"] {
-      margin: 0 10px;
-      font-style: italic;
-      &.small {
-        width: 60px;
-      }
-      &.medium {
-        width: 120px;
-      }
-    }
-  }
-}
-
-.different-places {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  &>div {
-    width: 30%;
-    p {
-      font-weight: 700;
-      margin-bottom: 2px;
-    }
-    textarea {
-      border: 1px solid black;
-      width: 100%;
-      font-style: italic;
-      font-size: 12pt;
-    }
-  }
-}
-
 .centered {
   display: inline-flex;
   justify-content: center;
@@ -157,7 +188,6 @@
 .table-container {
   overflow: scroll;
   position: relative;
-  margin-bottom: 5px;
 }
 //buttons
 

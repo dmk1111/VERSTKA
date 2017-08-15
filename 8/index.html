@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>8th page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="main">
+    <div class="search-bar">
+        <div class="search-box">
+            <label for="search-box">Пошук</label>
+            <input type="search" placeholder="Прізвище ім'я по батькові" id="search-box" results=5>
+            <span class="buttons">
+                <span class="search-icon"></span>
+                <span class="arrow-back"></span>
+                <span class="arrow-forward"></span>
+            </span>
+        </div>
+
+        <span class="top-buttons">
+            <span class="add-button"></span>
+            <span class="edit-button"></span>
+            <span class="cancel-button"></span>
+        </span>
+    </div>
+    <div class="sidebar">
+        <div class="menu-item"><span>Загальна інформація</span></div>
+        <div class="menu-item"><span>Звання, ранг, розряд (категорія)</span></div>
+        <div class="menu-item"><span>Службова (трудова) діяльність</span></div>
+        <div class="menu-item"><span>Освіта</span></div>
+        <div class="menu-item"><span>Контракт, атестація, кадровий резерв</span></div>
+        <div class="menu-item"><span>Заоходження, стягнення</span></div>
+        <div class="menu-item"><span>Місце проживання, сімейний стан</span></div>
+        <div class="menu-item"><span>Пільги, перевірки, декларації</span></div>
+        <div class="menu-item"><span>Відпустки, лікування</span></div>
+        <div class="menu-item"><span>Звільнення, вислуга (стаж)</span></div>
+        <div class="menu-item"><span>Військовий облік</span></div>
+        <div class="menu-item"><span>Інше</span></div>
+    </div>
+    <div class="main-container">
+
+        <div class="eighth-page">
+            <div class="row">
+                <span class="user-name">МИХАЛЬЧУК Петро Степанович</span>
+            </div>
+            <div class="top-container">
+                <p>Пільги</p>
+                <div class="flex-wrapper">
+                    <div class="inner-flex">
+                        <div>
+                            <p>Категорія</p>
+                            <span class="centered">ЧАЕС</span>
+                            <div class="dropdown-select">
+                                <select>
+                                    <option value="main">something</option>
+                                    <option value="additional" selected>1 категорія</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Участь</p>
+                            <span class="centered">УБД</span>
+                            <div class="dropdown-select">
+                                <select>
+                                    <option value="main">убд</option>
+                                    <option value="additional" selected>розмінування</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Група</p>
+                            <span class="centered">Інвалідність</span>
+                            <div class="dropdown-select">
+                                <select>
+                                    <option value="main">І</option>
+                                    <option value="additional" selected>ІІ</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-flex">
+                        <div>
+                            <p>Серія, № посвідчення</p>
+                            <input type="text" value="А № 111111">
+                        </div>
+                        <div>
+                            <p>Серія, № посвідчення</p>
+                            <input type="text" value="АБ № 555555">
+                        </div>
+                        <div>
+                            <p>Дата встановлення</p>
+                            <input type="date" style="width: 100%">
+                        </div>
+                    </div>
+                    <div class="inner-flex">
+                        <div>
+                            <p>Орган, який видав посвідчення, дата видачі</p>
+                            <input type="text" value="Київська обласна державна адміністрація, 20.02.2001">
+                        </div>
+                        <div>
+                            <p>Орган, який видав посвідчення, дата видачі</p>
+                            <input type="text" value="ДСНС України, 28.02.2017">
+                        </div>
+                        <div>
+                            <p>Орган, який встановив інвалідність</p>
+                            <input type="text" value="МСЕК Галицького району м. Львова">
+                        </div>
+                    </div>
+                </div>
+                <input type="checkbox" value="veteran" checked>статус ветерана служби
+            </div>
+
+            <div class="middle-container">
+                <div class="table">
+                    <div class="single-row">
+                        <span>Електронні декларації</span>
+                        <span class="inner-buttons">
+                            <span class="add-button"></span>
+                            <span class="edit-button"></span>
+                            <span class="cancel-button"></span>
+                        </span>
+                    </div>
+                    <div class="table-container table-1">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th class="date-cell">Рік</th>
+                                <th>Тип</th>
+                                <th>Посилання</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>2016</td>
+                                <td>
+                                    <div class="dropdown-select">
+                                        <select>
+                                            <option value="main" selected>кандидат на посаду</option>
+                                            <option value="additional">щорічна</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>https://portal.nazk.gov.ua/111</td>
+                            </tr>
+                            <tr>
+                                <td>2017</td>
+                                <td>
+                                    <div class="dropdown-select">
+                                        <select>
+                                            <option value="main">кандидат на посаду</option>
+                                            <option value="additional" selected>щорічна</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>https://portal.nazk.gov.ua/333</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="pdf-files">
+                    <table>
+                        <thead>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><div class="pdf-file"></div></td>
+                            <td>Результати спеціальної перевірки</td>
+                        </tr>
+                        <tr>
+                            <td><div class="pdf-file"></div></td>
+                            <td>Результати люстрації</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="bottom-container">
+                <div class="single-row">
+                    <span>Електронні декларації</span>
+                    <span class="inner-buttons">
+                        <span class="add-button"></span>
+                        <span class="edit-button"></span>
+                        <span class="cancel-button"></span>
+                    </span>
+                </div>
+                <div class="table-container table-2">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Дата проведення</th>
+                        <th>Рівень придатності</th>
+                        <th>№ довідки</th>
+                        <th class="wide-cell">Підстава проведення психологічного обстеження</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>15.10.2015</td>
+                        <td>
+                            <div class="dropdown-select">
+                                <select>
+                                    <option value="A" selected>A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>257</td>
+                        <td class="wide-cell">
+                            <div class="dropdown-select">
+                                <select>
+                                    <option value="asdf" selected>відбір кандидата на службу (роботу)</option>
+                                    <option value="fdsa">призначення на керівну посаду</option>
+                                    <option value="qwert">something else</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>25.06.2017</td>
+                        <td>
+                            <div class="dropdown-select">
+                                <select>
+                                    <option value="A" selected>A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>133</td>
+                        <td class="wide-cell">
+                            <div class="dropdown-select">
+                                <select>
+                                    <option value="asdf">відбір кандидата на службу (роботу)</option>
+                                    <option value="fdsa" selected>призначення на керівну посаду</option>
+                                    <option value="qwert">something else</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
