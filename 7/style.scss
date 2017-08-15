@@ -1,0 +1,211 @@
+@import "container-style";
+
+.seventh-page{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  .user-name {
+    font-style: italic;
+    font-size: 16pt;
+    font-weight: 400;
+  }
+  .table {
+    height: 500px;
+    overflow: scroll;
+  }
+  table {
+    width: 100%;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 5px;
+  }
+
+  td {
+    height: 30px;
+    font-style: italic;
+    padding: 0 5px;
+    vertical-align: inherit;
+    text-align: left;
+    .dropdown-select {
+      height: 28px;
+    }
+  }
+  th {
+    height: 40px;
+    text-align: center;
+  }
+  .table-1 {
+    height: auto;
+    & th {
+      &.wide-cell {
+        width: 45%;
+      }
+    }
+    & td {
+      text-align: center;
+      &.note-cell {
+        text-align: left;
+      }
+    }
+  }
+
+  .table-2 {
+    height: auto;
+    & th, & td {
+      &.dropdown-cell {
+        width: 30%;
+      }
+      &.date-cell {
+        width: 15%;
+        text-align: center;
+      }
+    }
+  }
+  .info-wrapper {
+    width: 15%;
+    margin-right: 45%;
+    &>div {
+      display: inline-block;
+    }
+  }
+  .info {
+    margin-left: 10%;
+    color: green;
+    font-weight: 700;
+  }
+  .red {
+    color: red;
+  }
+}
+
+.single-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 5px;
+  &>span {
+    font-weight: 700;
+  }
+  .add-text {
+    margin-right: 2px;
+  }
+  .add-button {
+    display: inline-block;
+    background-image: url("../img/add.png");
+    background-size: 100%;
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.document-info {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  &>p {
+    margin-bottom: 2px;
+  }
+  &>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    [type="text"], [type="number"], [type="date"] {
+      margin: 0 10px;
+      font-style: italic;
+      &.small {
+        width: 60px;
+      }
+      &.medium {
+        width: 120px;
+      }
+    }
+  }
+}
+
+.different-places {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  &>div {
+    width: 30%;
+    p {
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    textarea {
+      border: 1px solid black;
+      width: 100%;
+      font-style: italic;
+      font-size: 12pt;
+    }
+  }
+}
+
+.centered {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-container {
+  overflow: scroll;
+  position: relative;
+  margin-bottom: 5px;
+}
+//buttons
+
+.button {
+  width: 150px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 5px 10px;
+  margin: 5px;
+  margin-left: 0;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  .single-row & {
+    flex-grow: 0;
+    margin-left: auto;
+    height: auto;
+  }
+}
+
+.top-buttons {
+  width: 120px;
+  float: right;
+  height: 40px;
+  display: inline-flex;
+}
+
+.inner-buttons {
+  width: 75px;
+  float: right;
+  display: inline-flex;
+}
+
+.edit-button, .cancel-button, .add-button {
+  height: 38px;
+  width: 38px;
+  .inner-buttons & {
+    background-size: 100%;
+    height: 24px;
+    width: 24px;
+  }
+}
+.edit-button {
+  background-image: url("../img/edit-pen.png");
+}
+
+.cancel-button {
+  background-image: url("../img/cancel-x.png");
+}

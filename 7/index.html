@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>7th page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="main">
+    <div class="search-bar">
+        <div class="search-box">
+            <label for="search-box">Пошук</label>
+            <input type="search" placeholder="Прізвище ім'я по батькові" id="search-box" results=5>
+            <span class="buttons">
+                <span class="search-icon"></span>
+                <span class="arrow-back"></span>
+                <span class="arrow-forward"></span>
+            </span>
+        </div>
+
+        <span class="top-buttons">
+            <span class="add-button"></span>
+            <span class="edit-button"></span>
+            <span class="cancel-button"></span>
+        </span>
+    </div>
+    <div class="sidebar">
+        <div class="menu-item"><span>Загальна інформація</span></div>
+        <div class="menu-item"><span>Звання, ранг, розряд (категорія)</span></div>
+        <div class="menu-item"><span>Службова (трудова) діяльність</span></div>
+        <div class="menu-item"><span>Освіта</span></div>
+        <div class="menu-item"><span>Контракт, атестація, кадровий резерв</span></div>
+        <div class="menu-item"><span>Заоходження, стягнення</span></div>
+        <div class="menu-item"><span>Місце проживання, сімейний стан</span></div>
+        <div class="menu-item"><span>Пільги, перевірки, декларації</span></div>
+        <div class="menu-item"><span>Відпустки, лікування</span></div>
+        <div class="menu-item"><span>Звільнення, вислуга (стаж)</span></div>
+        <div class="menu-item"><span>Військовий облік</span></div>
+        <div class="menu-item"><span>Інше</span></div>
+    </div>
+    <div class="main-container">
+
+        <div class="seventh-page">
+            <div class="row">
+                <span class="user-name">МИХАЛЬЧУК Петро Степанович</span>
+            </div>
+            <div class="document-info">
+                <p>Паспорт громадянина України</p>
+                <div>Серія 
+                    <input type="text" value="СК" class="small"> 
+                    № 
+                    <input type="number" value="111111"class="medium">
+                    виданий 
+                    <input type="text" value="Залізничним РУ ГУ МВС України в місті Києві 20 грудня 1998 року">
+                </div>
+                <p>Паспорт громадянина України для виїзду за кордон (за наявності)</p>
+                <div>Номер 
+                    <input type="text" value="FE 111111" class="medium"> 
+                    виданий (код органу) 
+                    <input type="number" value="8089" class="small"> 
+                    Дата закінчення строку дії
+                    <input type="date" value="15-07-2026">
+                </div>
+            </div>
+            <div class="single-row">
+                <span>Службове посвідчення</span>
+                <span class="inner-buttons">
+                    <span class="add-button"></span>
+                    <span class="edit-button"></span>
+                    <span class="cancel-button"></span>
+                </span>
+            </div>
+            <div class="table-container table-1">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Серія, номер</th>
+                        <th class="wide-cell">Ким видано</th>
+                        <th>Дата видачі</th>
+                        <th>Закінчення дії</th>
+                        <th>Примітка</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>ДС 000001</td>
+                        <td>
+                            <div class="dropdown-select">
+                                <select>
+                                    <option value="main" selected>апарат ДСНС</option>
+                                    <option value="additional">ГУ ДСНС України у Запорізькій області</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>11.05.2014</td>
+                        <td>11.05.2017</td>
+                        <td class="note-cell">замінено 15.04.2016</td>
+                    </tr>
+
+                    <tr>
+                        <td>ЗП 000001</td>
+                        <td>
+                            <div class="dropdown-select">
+                                <select>
+                                    <option value="main">апарат ДСНС</option>
+                                    <option value="additional" selected>ГУ ДСНС України у Запорізькій області</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>11.05.2015</td>
+                        <td>11.05.2018</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="different-places">
+                <div>
+                    <p>Місце народження</p>
+                    <textarea name="birth-place" id="birth-place" cols="15" rows="3">
+Чернігівська область, Носівський район, село Катеринівка
+                    </textarea>
+                </div>
+                <div>
+                    <p>Місце реєстрації</p>
+                    <textarea name="registration-place" id="registration-place" cols="15" rows="3">
+08703, Київська область, місто Обухів, вулиця Київська, 300, квартира 100
+                    </textarea>
+                </div>
+                <div>
+                    <p>Місце фактичного проживання</p>
+                    <textarea name="living-place" id="living-place" cols="15" rows="3">
+03703, місто Київ, проспект Шевченка, 100, квартира 300
+                    </textarea>
+                </div>
+            </div>
+
+            <div class="single-row">
+                <span>Сімейний стан</span>
+                <span class="info-wrapper centered">
+                    <div class="dropdown-select">
+                        <select>
+                            <option value="main">холостяк</option>
+                            <option value="additional" selected>одружений</option>
+                        </select>
+                    </div>
+                </span>
+                <span class="inner-buttons centered">
+                    <span class="add-button"></span>
+                    <span class="edit-button"></span>
+                    <span class="cancel-button"></span>
+                </span>
+            </div>
+            <div class="table-container table-2">
+                <table>
+                    <thead>
+                    <tr>
+                        <th class="dropdown-cell">Ступінь родинного звязку (склад сім'ї)</th>
+                        <th>Прізвище, ім'я, по батькові</th>
+                        <th class="date-cell">Дата народження</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="dropdown-select">
+                                <select>
+                                    <option value="wife" selected>дружина</option>
+                                    <option value="husband">чоловік</option>
+                                    <option value="daughter">донька</option>
+                                    <option value="son">син</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>Михальчук (Сахно) Альона Василівна</td>
+                        <td class="date-cell">20.05.1985</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="dropdown-select">
+                                <select>
+                                    <option value="wife">дружина</option>
+                                    <option value="husband">чоловік</option>
+                                    <option value="daughter">донька</option>
+                                    <option value="son" selected>син</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>Михальчук Степан Петрович</td>
+                        <td class="date-cell">15.11.2010</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="dropdown-select">
+                                <select>
+                                    <option value="wife">дружина</option>
+                                    <option value="husband" >чоловік</option>
+                                    <option value="daughter" selected>донька</option>
+                                    <option value="son">син</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>Михальчук Катерина Петрівна</td>
+                        <td class="date-cell">07.08.2015</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
