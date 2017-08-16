@@ -1,0 +1,305 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 10px; }
+  body * {
+    box-sizing: border-box;
+    font-family: "Times New Roman"; }
+
+.main {
+  border: 1px solid black;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px); }
+  .main .search-bar {
+    height: 40px;
+    border-bottom: 1px solid black;
+    margin-bottom: 2px; }
+    .main .search-bar .search-box {
+      margin-left: 40px;
+      display: inline-block;
+      width: 500px;
+      height: 40px;
+      vertical-align: middle;
+      white-space: nowrap;
+      position: absolute;
+      top: 11px; }
+      .main .search-bar .search-box label {
+        font-weight: 700;
+        display: inline-block;
+        height: 30px;
+        margin-top: 10px;
+        margin-right: 20px; }
+    .main .search-bar input#search-box {
+      display: inline-block;
+      border: 1px solid black;
+      font-size: 12pt;
+      margin: 0 auto;
+      height: 40px;
+      width: 300px;
+      position: absolute;
+      top: 0; }
+      .main .search-bar input#search-box::placeholder {
+        font-style: italic; }
+    .main .search-bar .search-icon, .main .search-bar .arrow-back, .main .search-bar .arrow-forward, .main .search-bar .add-button {
+      display: inline-block;
+      height: 38px;
+      width: 38px;
+      cursor: pointer; }
+    .main .search-bar .buttons {
+      float: right; }
+    .main .search-bar .arrow-back {
+      background-image: url("../img/arrow-back.png"); }
+    .main .search-bar .arrow-forward {
+      background-image: url("../img/arrow-forward.png"); }
+    .main .search-bar .search-icon {
+      background-image: url("../img/search.png"); }
+    .main .search-bar .add {
+      width: 100px;
+      float: right;
+      height: 40px; }
+      .main .search-bar .add-text {
+        position: absolute;
+        top: 20px; }
+      .main .search-bar .add-button {
+        background-image: url("../img/add.png");
+        float: right; }
+  .main .sidebar {
+    display: inline-block;
+    border: 2px solid black;
+    float: left; }
+    .main .sidebar .menu-item {
+      font-weight: 700;
+      text-align: center;
+      width: 150px;
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 2px solid black; }
+      .main .sidebar .menu-item span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal; }
+      .main .sidebar .menu-item:last-child {
+        border: none; }
+
+.main-container {
+  width: calc(100% - 155px);
+  display: inline-block;
+  min-height: 650px; }
+
+[type="text"], [type="number"] {
+  padding-left: 8px;
+  border: 1px solid black;
+  font-size: 12pt;
+  height: 30px;
+  width: 100%; }
+
+[type="number"], [type="date"] {
+  text-align: center;
+  font-style: italic; }
+
+[type="date"] {
+  font-size: 12pt;
+  min-width: 120px;
+  width: 120px;
+  display: inline-block;
+  background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+  height: 30px; }
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none; }
+
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0; }
+
+.dropdown-select {
+  display: inline-block;
+  background: url("../img/dropdown-arrow.jpg") no-repeat right center;
+  height: 30px;
+  overflow: hidden;
+  width: calc(100% - 5px);
+  min-width: 240px;
+  border: 1px solid black; }
+  .dropdown-select * {
+    font-style: italic;
+    text-align: center; }
+  .dropdown-select select {
+    background: transparent;
+    padding: 5px;
+    /* If you add too much padding here, the options won't show in IE */
+    border: 1px solid #ccc;
+    font-size: 16px;
+    height: 30px;
+    width: calc(100% + 15px);
+    min-width: 260px; }
+
+.tenth-page {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto; }
+  .tenth-page .user-name {
+    font-style: italic;
+    font-size: 16pt;
+    font-weight: 400; }
+  .tenth-page .table-container {
+    display: flex;
+    flex-direction: row; }
+  .tenth-page table {
+    width: 50%; }
+  .tenth-page table, .tenth-page th, .tenth-page td {
+    border: none;
+    border-collapse: collapse; }
+  .tenth-page th, .tenth-page td {
+    padding: 5px; }
+  .tenth-page td {
+    height: 30px;
+    font-style: normal;
+    padding: 0 !important;
+    vertical-align: inherit;
+    text-align: left;
+    font-weight: 700; }
+  .tenth-page .top-container, .tenth-page .middle-container, .tenth-page .bottom-container {
+    margin-bottom: 10px; }
+  .tenth-page .top-container {
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: 700; }
+    .tenth-page .top-container p {
+      margin: 0; }
+    .tenth-page .top-container .flex-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: space-between; }
+      .tenth-page .top-container .flex-wrapper .inner-flex {
+        width: 45%;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 5px; }
+        .tenth-page .top-container .flex-wrapper .inner-flex:first-child {
+          max-width: 390px; }
+          .tenth-page .top-container .flex-wrapper .inner-flex:first-child [type="text"] {
+            text-align: center;
+            width: 100%; }
+        .tenth-page .top-container .flex-wrapper .inner-flex [type="number"] {
+          width: 80px; }
+        .tenth-page .top-container .flex-wrapper .inner-flex div {
+          margin-bottom: 5px; }
+        .tenth-page .top-container .flex-wrapper .inner-flex span {
+          line-height: 30px; }
+        .tenth-page .top-container .flex-wrapper .inner-flex .dropdown-select {
+          min-width: 50%;
+          width: auto;
+          max-width: 60%;
+          float: right;
+          text-align: center; }
+  .tenth-page .middle-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px; }
+    .tenth-page .middle-container p {
+      font-weight: 700;
+      margin: 0; }
+  .tenth-page .bottom-container {
+    margin-bottom: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; }
+    .tenth-page .bottom-container .bottom-row {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+      justify-content: space-between; }
+      .tenth-page .bottom-container .bottom-row:first-child div {
+        flex-grow: 1; }
+        .tenth-page .bottom-container .bottom-row:first-child div:first-child {
+          margin-right: 20px;
+          flex-grow: 0; }
+          .tenth-page .bottom-container .bottom-row:first-child div:first-child .dropdown-select {
+            width: 150px;
+            min-width: 150px;
+            max-width: calc(100% -5px); }
+      .tenth-page .bottom-container .bottom-row > .dropdown-select {
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 40%;
+        margin: 0 10px; }
+      .tenth-page .bottom-container .bottom-row > [type="text"], .tenth-page .bottom-container .bottom-row > [type="number"] {
+        max-width: 80px;
+        width: 80px;
+        margin-left: 10px; }
+      .tenth-page .bottom-container .bottom-row [type="date"] {
+        margin: 0 10px; }
+      .tenth-page .bottom-container .bottom-row p, .tenth-page .bottom-container .bottom-row span {
+        margin: 0;
+        font-weight: 700; }
+      .tenth-page .bottom-container .bottom-row:last-child > [type="text"] {
+        width: 100%;
+        max-width: 100%; }
+      .tenth-page .bottom-container .bottom-row:last-child > div:first-child {
+        flex-grow: 1;
+        margin-right: 40px; }
+  .tenth-page input {
+    font-style: italic; }
+
+.info {
+  margin-left: 0;
+  color: green;
+  font-weight: 700; }
+
+.red {
+  color: red; }
+
+.centered {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; }
+  .centered.two-rows {
+    width: 150px; }
+  .centered.input {
+    width: 60%; }
+
+.buttons-container {
+  margin-left: 10px;
+  display: flex;
+  width: 470px; }
+
+.button {
+  width: 150px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 5px 10px;
+  margin: 0 10px 0 0;
+  height: 50px;
+  border: 2px solid black;
+  text-align: center;
+  font-weight: 700;
+  background-color: #f2f2f2; }
+
+.top-buttons {
+  width: 120px;
+  float: right;
+  height: 40px;
+  display: inline-flex; }
+
+.inner-buttons {
+  width: 75px;
+  float: right;
+  display: inline-flex; }
+
+.edit-button, .cancel-button, .add-button {
+  height: 38px;
+  width: 38px; }
+  .inner-buttons .edit-button, .inner-buttons .cancel-button, .inner-buttons .add-button {
+    background-size: 100%;
+    height: 24px;
+    width: 24px; }
+
+.edit-button {
+  background-image: url("../img/edit-pen.png"); }
+
+.cancel-button {
+  background-image: url("../img/cancel-x.png"); }
+
+/*# sourceMappingURL=style.css.map */

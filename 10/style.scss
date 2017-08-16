@@ -1,0 +1,229 @@
+@import "container-style";
+
+.tenth-page{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  .user-name {
+    font-style: italic;
+    font-size: 16pt;
+    font-weight: 400;
+  }
+
+  .table-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  table {
+    width: 50%;
+  }
+
+  table, th, td {
+    border: none;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 5px;
+  }
+
+  td {
+    height: 30px;
+    font-style: normal;
+    padding: 0 !important;
+    vertical-align: inherit;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .top-container, .middle-container, .bottom-container {
+    margin-bottom: 10px;
+  }
+
+  .top-container {
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: 700;
+    p {
+      margin: 0;
+    }
+    .flex-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: space-between;
+      .inner-flex {
+        width: 45%;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        &:first-child {
+          max-width: 390px;
+          [type="text"] {
+            text-align: center;
+            width: 100%;
+          }
+        }
+        [type="number"] {
+          width: 80px;
+        }
+        div {
+          margin-bottom: 5px;
+        }
+        span {
+          line-height: 30px;
+        }
+        .dropdown-select {
+          min-width: 50%;
+          width: auto;
+          max-width: 60%;
+          float: right;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .middle-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    p {
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+  .bottom-container {
+    margin-bottom: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    .bottom-row {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+      justify-content: space-between;
+      &:first-child {
+        div {
+          flex-grow: 1;
+          &:first-child {
+            margin-right: 20px;
+            flex-grow: 0;
+            .dropdown-select {
+              width: 150px;
+              min-width: 150px;
+              max-width: calc(100% -5px);
+            }
+          }
+        }
+      }
+      &>.dropdown-select {
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 40%;
+        margin: 0 10px;
+      }
+      &>[type="text"], &>[type="number"] {
+        max-width: 80px;
+        width: 80px;
+        margin-left: 10px;
+      }
+      [type="date"] {
+        margin: 0 10px;
+      }
+      p, span {
+        margin: 0;
+        font-weight: 700;
+      }
+
+      &:last-child {
+        &>[type="text"] {
+          width: 100%;
+          max-width: 100%;
+        }
+        &>div:first-child {
+          flex-grow: 1;
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+  input {
+    font-style: italic;
+  }
+}
+
+.info {
+  margin-left: 0;
+  color: green;
+  font-weight: 700;
+}
+.red {
+  color: red;
+}
+
+.centered {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  &.two-rows {
+    width: 150px;
+  }
+  &.input {
+    width: 60%;
+  }
+}
+
+//buttons
+
+.buttons-container {
+  margin-left: 10px;
+  display: flex;
+  width: 470px;
+}
+
+.button {
+  width: 150px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 5px 10px;
+  margin: 0 10px 0 0;
+  height: 50px;
+  border: 2px solid black;
+  text-align: center;
+  font-weight: 700;
+  background-color: #f2f2f2;
+}
+
+.top-buttons {
+  width: 120px;
+  float: right;
+  height: 40px;
+  display: inline-flex;
+}
+
+.inner-buttons {
+  width: 75px;
+  float: right;
+  display: inline-flex;
+}
+
+.edit-button, .cancel-button, .add-button {
+  height: 38px;
+  width: 38px;
+  .inner-buttons & {
+    background-size: 100%;
+    height: 24px;
+    width: 24px;
+  }
+}
+.edit-button {
+  background-image: url("../img/edit-pen.png");
+}
+
+.cancel-button {
+  background-image: url("../img/cancel-x.png");
+}
